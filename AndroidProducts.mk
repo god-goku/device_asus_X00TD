@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X00TD.mk
+    $(LOCAL_DIR)/blaze_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X00TD-user \
-    aosp_X00TD-userdebug \
-    aosp_X00TD-eng
+    blaze_X00TD-user \
+    blaze_X00TD-userdebug \
+    blaze_X00TD-eng
 
