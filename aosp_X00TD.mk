@@ -25,20 +25,42 @@ PRODUCT_MANUFACTURER := asus
 # Aosp Stuff with GApps
 TARGET_BOOT_ANIMATION_RES := 1080
 ARCANA_DEVICE := X00TD
+
+# Grapheneos Camera 
 TARGET_BUILD_GRAPHENEOS_CAMERA=true
-#TARGET_GAPPS_ARCH := arm64
-#WITH_GAPPS := true
+
+# Apn Settings 
+COPY_APN_SYSTEM := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Bloom and Living Universe Pixel Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# Pixel Now playing feature
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Pixel charger animation
+USE_PIXEL_CHARGER_IMAGES := true
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="raven-user 12 SP2A.220305.013.A3 8229987 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 12 SP2A.220405.003 8210211 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/raven/raven:12/SP2A.220305.013.A38229987:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:12/SP2A.220405.003/8210211:user/release-keys"
 
 # MAINTAINER STUFF
-ARCANA_MAINTAINER := God-GOKU
+ARCANA_MAINTAINER := God_GOKU
 ARCANA_OFFICIAL := false
